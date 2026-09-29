@@ -1,0 +1,10 @@
+{
+ "customers": 10,
+ "meals": 10,
+ "ingredients": 14,
+ "weekly_menus": 1,
+ "subscriptions": 9,
+ "orders": 8,
+ "order_items": 16,
+ "dietary_profiles": 10
+}
