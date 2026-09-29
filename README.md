@@ -33,3 +33,17 @@ Cream/terracotta/deep-green, Fraunces + Inter, card-based, mobile-first.
 Meal art is deterministic inline SVG (`app/components/MealArt.jsx`) — no
 external images. "Demo mode" badging on every surface; order flow is
 client-side only.
+
+## Live Airtable mode
+
+The portal ships with data baked in at build time (`app/lib/portal-data.json`),
+but it can also read fresh data on every visit:
+
+- `GET /api/portal-data` (server-only route, `revalidate = 60`) fetches all 8
+  tables from Airtable using `AIRTABLE_API_KEY` / `AIRTABLE_BASE_ID` env vars
+  (never `NEXT_PUBLIC_`-prefixed — the key never reaches the browser) and
+  denormalizes through the same `lib/portal-transform.js` used at build time.
+- The frontend tries `/api/portal-data` at runtime and silently falls back to
+  the baked JSON if the route is unavailable, so the demo never goes blank.
+  A "Live" badge in the header shows when live data is active.
+- Set the two env vars in Vercel (Production) and redeploy — no code changes.
