@@ -1,0 +1,1 @@
+{"dependencies":{"next":"14.2.35","react":"18.3.1","react-dom":"18.3.1"},"name":"toms-table-portal","private":true,"scripts":{"build":"npm run prepare-data && next build","dev":"next dev","prepare-data":"node scripts/prepare-data.mjs","start":"next start"},"version":"1.0.0"}
