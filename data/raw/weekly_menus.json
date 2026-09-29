@@ -1,0 +1,34 @@
+[
+ {
+  "id": "recGwFSR1OYPkjC2O",
+  "createdTime": "2026-09-29T21:09:37.000Z",
+  "fields": {
+   "Status": "Published",
+   "Order cutoff": "2026-10-01T18:00:00.000Z",
+   "Orders": [
+    "recfv2z5O9mz5Q5ZZ",
+    "recrqTfMtzQuq3PCT",
+    "recpaXlWbFdXSSfZL",
+    "recvPQw4EnzZg7tYV",
+    "recBCuS59qzPiD6OZ",
+    "recmjwB8p2B6amDTl",
+    "recB0tLICAFVIlHWz",
+    "recybrMPni2tdIoS8"
+   ],
+   "Meals": [
+    "recYY4oxqjol8vINE",
+    "recAE8gOcILhiAVgo",
+    "recom2jMNtG1KBEzn",
+    "recOZLXxj4A3t9Rt9",
+    "rechX54EJh9vtWcvi",
+    "recivxOAdWnPIzGGf",
+    "recyOxkonRllMCrU1",
+    "rec73Vc4G1fYMkqn2",
+    "recqrBSlDDNjq5sz5",
+    "recBVA0T1GUvmtopu"
+   ],
+   "Week commencing": "2026-09-28",
+   "Menu Notes": "Fall harvest week \u2014 sweet potato and kale featured across the menu."
+  }
+ }
+]
