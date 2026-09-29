@@ -1,0 +1,308 @@
+[
+ {
+  "id": "rec73Vc4G1fYMkqn2",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "rec6Y1wVguFgrGed9"
+   ],
+   "Description": "Grilled chicken and melted cheddar with black beans in a crisp flour tortilla.",
+   "Prep Time (mins)": 20,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "High-Protein",
+    "Halal"
+   ],
+   "Base price": 13.49,
+   "Ingredients": [
+    "recH9UGgK5ymxVXp8",
+    "recwWzOthwJAuL9TG",
+    "rec9IshIHv6xB8lcs",
+    "rectGhc21ttshVUS0"
+   ],
+   "Category": "Lunch",
+   "Name": "Cheesy Chicken Quesadilla",
+   "Active": true
+  }
+ },
+ {
+  "id": "recAE8gOcILhiAVgo",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "recHIZY9pqENXszkn"
+   ],
+   "Description": "Glazed salmon fillet with fluffy quinoa, charred broccoli and wilted kale.",
+   "Prep Time (mins)": 30,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "Gluten-Free",
+    "Dairy-Free",
+    "Nut-Free",
+    "High-Protein"
+   ],
+   "Base price": 17.99,
+   "Ingredients": [
+    "rec8zEI24E4VPY4FT",
+    "recjmYNZwkLUACeXc",
+    "recUB7neMqh09WoAs",
+    "recbHITPMAUK51bMP"
+   ],
+   "Category": "Dinner",
+   "Name": "Salmon Teriyaki & Quinoa",
+   "Active": true
+  }
+ },
+ {
+  "id": "recBVA0T1GUvmtopu",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "reciXLmM73qZNcc8j"
+   ],
+   "Description": "Seasoned ground turkey over jasmine rice with black beans, avocado and lime.",
+   "Prep Time (mins)": 24,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "Gluten-Free",
+    "Dairy-Free",
+    "Nut-Free",
+    "Halal",
+    "High-Protein"
+   ],
+   "Base price": 14.49,
+   "Ingredients": [
+    "recgC4qfyDzNQuz7t",
+    "rectGhc21ttshVUS0",
+    "recQDnNmbMjR1DJbK",
+    "rec7PC99FfvaLlRRv"
+   ],
+   "Category": "Dinner",
+   "Name": "Southwest Turkey Bowl",
+   "Active": true
+  }
+ },
+ {
+  "id": "recOZLXxj4A3t9Rt9",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "receGhQ0PjrcxcoZo",
+    "recztfmNdh9f1wSaW"
+   ],
+   "Description": "Lean ground turkey with roasted sweet potato, kale and broccoli in a savory herb sauce.",
+   "Prep Time (mins)": 28,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "Gluten-Free",
+    "Dairy-Free",
+    "Nut-Free",
+    "Halal",
+    "High-Protein"
+   ],
+   "Base price": 15.49,
+   "Ingredients": [
+    "recgC4qfyDzNQuz7t",
+    "recXEhYsClfU5JYgy",
+    "recbHITPMAUK51bMP",
+    "recUB7neMqh09WoAs"
+   ],
+   "Category": "Dinner",
+   "Name": "Turkey Sweet Potato Skillet",
+   "Active": true
+  }
+ },
+ {
+  "id": "recYY4oxqjol8vINE",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "rec8kxz5hqGORXcv4",
+    "rectbimmDDrRnUUe4",
+    "reckMhEnyBxvGihXN"
+   ],
+   "Description": "Herb-grilled chicken breast over jasmine rice with steamed broccoli and fresh avocado.",
+   "Prep Time (mins)": 25,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "High-Protein",
+    "Gluten-Free",
+    "Dairy-Free",
+    "Nut-Free",
+    "Halal"
+   ],
+   "Base price": 14.99,
+   "Ingredients": [
+    "recH9UGgK5ymxVXp8",
+    "recQDnNmbMjR1DJbK",
+    "recUB7neMqh09WoAs",
+    "rec7PC99FfvaLlRRv"
+   ],
+   "Category": "Dinner",
+   "Name": "Grilled Chicken Power Bowl",
+   "Active": true
+  }
+ },
+ {
+  "id": "rechX54EJh9vtWcvi",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "recyhuMsKG1zgL9to"
+   ],
+   "Description": "Tender chicken simmered in coconut curry over jasmine rice with steamed broccoli.",
+   "Prep Time (mins)": 30,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "Gluten-Free",
+    "Dairy-Free",
+    "Nut-Free",
+    "Halal"
+   ],
+   "Base price": 15.99,
+   "Ingredients": [
+    "recH9UGgK5ymxVXp8",
+    "recQDnNmbMjR1DJbK",
+    "rechtOr0w0x1OBdfj",
+    "recUB7neMqh09WoAs"
+   ],
+   "Category": "Dinner",
+   "Name": "Coconut Curry Chicken & Rice",
+   "Active": true
+  }
+ },
+ {
+  "id": "recivxOAdWnPIzGGf",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "recS8W7rzTXlvB1IL"
+   ],
+   "Description": "Fluffy scrambled eggs with cheddar, kale and roasted sweet potato home fries.",
+   "Prep Time (mins)": 18,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "Vegetarian",
+    "Gluten-Free"
+   ],
+   "Base price": 11.99,
+   "Ingredients": [
+    "recg44RFHlWTGvCLc",
+    "recwWzOthwJAuL9TG",
+    "recbHITPMAUK51bMP",
+    "recXEhYsClfU5JYgy"
+   ],
+   "Category": "Breakfast",
+   "Name": "Veggie Scramble Breakfast Box",
+   "Active": true
+  }
+ },
+ {
+  "id": "recom2jMNtG1KBEzn",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "reckiRfr2oPo91RVN",
+    "recvV54qtHLZe20F0"
+   ],
+   "Description": "Smoky black beans, avocado and kale wrapped in a soft flour tortilla with lime crema.",
+   "Prep Time (mins)": 15,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "Vegetarian",
+    "Vegan",
+    "Dairy-Free"
+   ],
+   "Base price": 11.99,
+   "Ingredients": [
+    "rectGhc21ttshVUS0",
+    "rec9IshIHv6xB8lcs",
+    "rec7PC99FfvaLlRRv",
+    "recbHITPMAUK51bMP"
+   ],
+   "Category": "Lunch",
+   "Name": "Black Bean Fiesta Wrap",
+   "Active": true
+  }
+ },
+ {
+  "id": "recqrBSlDDNjq5sz5",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "rec0WSLWKdeBMGyEj"
+   ],
+   "Description": "Oven-baked salmon with garlicky broccoli, kale and roasted sweet potato wedges.",
+   "Prep Time (mins)": 32,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "Gluten-Free",
+    "Dairy-Free",
+    "Nut-Free",
+    "Keto",
+    "High-Protein"
+   ],
+   "Base price": 18.99,
+   "Ingredients": [
+    "rec8zEI24E4VPY4FT",
+    "recUB7neMqh09WoAs",
+    "recbHITPMAUK51bMP",
+    "recXEhYsClfU5JYgy"
+   ],
+   "Category": "Dinner",
+   "Name": "Baked Salmon & Greens Plate",
+   "Active": true
+  }
+ },
+ {
+  "id": "recyOxkonRllMCrU1",
+  "createdTime": "2026-09-29T21:09:08.000Z",
+  "fields": {
+   "Order Items": [
+    "recZvD4AlEjQMbOwF",
+    "recYjgeS2zg9rSrhq",
+    "rec6tyBRazJL5K0V0"
+   ],
+   "Description": "Protein-packed quinoa with massaged kale, avocado and black beans in citrus vinaigrette.",
+   "Prep Time (mins)": 12,
+   "Weekly Menus": [
+    "recGwFSR1OYPkjC2O"
+   ],
+   "Dietary tags": [
+    "Vegetarian",
+    "Vegan",
+    "Gluten-Free",
+    "Dairy-Free",
+    "Nut-Free"
+   ],
+   "Base price": 12.99,
+   "Ingredients": [
+    "recjmYNZwkLUACeXc",
+    "recbHITPMAUK51bMP",
+    "rec7PC99FfvaLlRRv",
+    "rectGhc21ttshVUS0"
+   ],
+   "Category": "Lunch",
+   "Name": "Quinoa Kale Super Salad",
+   "Active": true
+  }
+ }
+]
