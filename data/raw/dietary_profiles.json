@@ -1,0 +1,169 @@
+[
+ {
+  "id": "rec9DyQo2EKOt0zzy",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Notes": "Marathon training \u2014 high protein please.",
+   "Customer": [
+    "rec7ttomRTnkVSEoS"
+   ],
+   "Severity Level": "Low",
+   "Allergies": "None",
+   "Id": 20,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ },
+ {
+  "id": "recUPXhG1IY3FdupE",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Customer": [
+    "recghHcMQIOe6pRYb"
+   ],
+   "Severity Level": "Low",
+   "Restrictions": [
+    "Halal"
+   ],
+   "Allergies": "None",
+   "Id": 28,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ },
+ {
+  "id": "recVlUn76J7W7t4hP",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Notes": "Halal certification required on all meat.",
+   "Customer": [
+    "recnoLeUxqAXcYecm"
+   ],
+   "Severity Level": "High",
+   "Restrictions": [
+    "Halal",
+    "Nut-Free"
+   ],
+   "Allergies": "Tree nuts",
+   "Id": 23,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ },
+ {
+  "id": "recXt1pVaoSehUbX7",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Notes": "Paused subscription while traveling.",
+   "Customer": [
+    "recFZln8vrkLk3332"
+   ],
+   "Severity Level": "Moderate",
+   "Restrictions": [
+    "Vegetarian",
+    "Nut-Free"
+   ],
+   "Allergies": "Walnuts",
+   "Id": 27,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ },
+ {
+  "id": "receTDqc5dR0yz1Cl",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Customer": [
+    "rec5t8JLqMH3KIM62"
+   ],
+   "Severity Level": "Low",
+   "Restrictions": [
+    "Keto",
+    "Dairy-Free"
+   ],
+   "Allergies": "None",
+   "Id": 22,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ },
+ {
+  "id": "reciDPWv44Do9wznO",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Notes": "Carries epi-pen; strict no-peanut kitchen handling.",
+   "Customer": [
+    "recM9Snn3Z1L9o8Qf"
+   ],
+   "Severity Level": "Severe",
+   "Restrictions": [
+    "Vegetarian"
+   ],
+   "Allergies": "Peanuts \u2014 severe",
+   "Id": 21,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ },
+ {
+  "id": "reciu7Pu8TioMOx2k",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Notes": "Double protein on bowls when possible.",
+   "Customer": [
+    "recSsJiECRCbNCOx2"
+   ],
+   "Severity Level": "Low",
+   "Restrictions": [
+    "Dairy-Free",
+    "Low-Sodium"
+   ],
+   "Allergies": "None",
+   "Id": 26,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ },
+ {
+  "id": "recmiKWvLVFjTkJOm",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Customer": [
+    "recgfnVyWVYP1KwHB"
+   ],
+   "Severity Level": "Moderate",
+   "Allergies": "Shellfish",
+   "Id": 24,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ },
+ {
+  "id": "recqhNF8l6NkWnlWa",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Notes": "Reads every label.",
+   "Customer": [
+    "reclDaudh2yk2uTYZ"
+   ],
+   "Severity Level": "Moderate",
+   "Restrictions": [
+    "Vegan",
+    "Gluten-Free"
+   ],
+   "Allergies": "Soy \u2014 moderate",
+   "Id": 25,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ },
+ {
+  "id": "recz7VIN65st65V0v",
+  "createdTime": "2026-09-29T21:09:34.000Z",
+  "fields": {
+   "Notes": "Prefers extra veggies over rice.",
+   "Customer": [
+    "recTyNsfhMeoz04Rz"
+   ],
+   "Severity Level": "Moderate",
+   "Restrictions": [
+    "Gluten-Free",
+    "Dairy-Free"
+   ],
+   "Allergies": "Lactose intolerance",
+   "Id": 19,
+   "Last Updated": "2026-09-29T21:09:35.000Z"
+  }
+ }
+]
