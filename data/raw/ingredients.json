@@ -1,0 +1,233 @@
+[
+ {
+  "id": "rec7PC99FfvaLlRRv",
+  "createdTime": "2026-09-29T21:09:07.000Z",
+  "fields": {
+   "Unit": "pcs",
+   "Supplier": "GreenHarvest Co.",
+   "Name": "Avocado",
+   "In Stock": true,
+   "Cost per unit": 1.2,
+   "Meals": [
+    "recYY4oxqjol8vINE",
+    "recom2jMNtG1KBEzn",
+    "recyOxkonRllMCrU1",
+    "recBVA0T1GUvmtopu"
+   ]
+  }
+ },
+ {
+  "id": "rec8zEI24E4VPY4FT",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "Pacific Catch",
+   "Name": "Salmon fillet",
+   "In Stock": true,
+   "Cost per unit": 18,
+   "Meals": [
+    "recAE8gOcILhiAVgo",
+    "recqrBSlDDNjq5sz5"
+   ]
+  }
+ },
+ {
+  "id": "rec9IshIHv6xB8lcs",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "pcs",
+   "Supplier": "FreshLine Foods",
+   "Name": "Flour tortillas",
+   "In Stock": true,
+   "Cost per unit": 0.45,
+   "Meals": [
+    "recom2jMNtG1KBEzn",
+    "rec73Vc4G1fYMkqn2"
+   ],
+   "Allergens": [
+    "Gluten"
+   ]
+  }
+ },
+ {
+  "id": "recH9UGgK5ymxVXp8",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "FreshLine Foods",
+   "Name": "Chicken breast",
+   "In Stock": true,
+   "Cost per unit": 8.5,
+   "Meals": [
+    "recYY4oxqjol8vINE",
+    "rechX54EJh9vtWcvi",
+    "rec73Vc4G1fYMkqn2"
+   ]
+  }
+ },
+ {
+  "id": "recQDnNmbMjR1DJbK",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "GreenHarvest Co.",
+   "Name": "Jasmine rice",
+   "In Stock": true,
+   "Cost per unit": 3.2,
+   "Meals": [
+    "recYY4oxqjol8vINE",
+    "rechX54EJh9vtWcvi",
+    "recBVA0T1GUvmtopu"
+   ]
+  }
+ },
+ {
+  "id": "recUB7neMqh09WoAs",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "GreenHarvest Co.",
+   "Name": "Broccoli",
+   "In Stock": true,
+   "Cost per unit": 2.8,
+   "Meals": [
+    "recYY4oxqjol8vINE",
+    "recAE8gOcILhiAVgo",
+    "recOZLXxj4A3t9Rt9",
+    "rechX54EJh9vtWcvi",
+    "recqrBSlDDNjq5sz5"
+   ]
+  }
+ },
+ {
+  "id": "recXEhYsClfU5JYgy",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "GreenHarvest Co.",
+   "Name": "Sweet potato",
+   "In Stock": true,
+   "Cost per unit": 1.9,
+   "Meals": [
+    "recOZLXxj4A3t9Rt9",
+    "recivxOAdWnPIzGGf",
+    "recqrBSlDDNjq5sz5"
+   ]
+  }
+ },
+ {
+  "id": "recbHITPMAUK51bMP",
+  "createdTime": "2026-09-29T21:09:07.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "GreenHarvest Co.",
+   "Name": "Kale",
+   "In Stock": true,
+   "Cost per unit": 3.1,
+   "Meals": [
+    "recAE8gOcILhiAVgo",
+    "recom2jMNtG1KBEzn",
+    "recOZLXxj4A3t9Rt9",
+    "recivxOAdWnPIzGGf",
+    "recyOxkonRllMCrU1",
+    "recqrBSlDDNjq5sz5"
+   ]
+  }
+ },
+ {
+  "id": "recg44RFHlWTGvCLc",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "dozen",
+   "Supplier": "Sunny Acres Dairy",
+   "Name": "Eggs",
+   "In Stock": true,
+   "Cost per unit": 3.6,
+   "Meals": [
+    "recivxOAdWnPIzGGf"
+   ],
+   "Allergens": [
+    "Eggs"
+   ]
+  }
+ },
+ {
+  "id": "recgC4qfyDzNQuz7t",
+  "createdTime": "2026-09-29T21:09:07.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "FreshLine Foods",
+   "Name": "Ground turkey",
+   "In Stock": true,
+   "Cost per unit": 7.9,
+   "Meals": [
+    "recOZLXxj4A3t9Rt9",
+    "recBVA0T1GUvmtopu"
+   ]
+  }
+ },
+ {
+  "id": "rechtOr0w0x1OBdfj",
+  "createdTime": "2026-09-29T21:09:07.000Z",
+  "fields": {
+   "Unit": "L",
+   "Supplier": "FreshLine Foods",
+   "Name": "Coconut milk",
+   "In Stock": true,
+   "Cost per unit": 4.2,
+   "Meals": [
+    "rechX54EJh9vtWcvi"
+   ]
+  }
+ },
+ {
+  "id": "recjmYNZwkLUACeXc",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "GreenHarvest Co.",
+   "Name": "Quinoa",
+   "In Stock": true,
+   "Cost per unit": 6.5,
+   "Meals": [
+    "recAE8gOcILhiAVgo",
+    "recyOxkonRllMCrU1"
+   ]
+  }
+ },
+ {
+  "id": "rectGhc21ttshVUS0",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "GreenHarvest Co.",
+   "Name": "Black beans",
+   "In Stock": true,
+   "Cost per unit": 2.4,
+   "Meals": [
+    "recom2jMNtG1KBEzn",
+    "recyOxkonRllMCrU1",
+    "rec73Vc4G1fYMkqn2",
+    "recBVA0T1GUvmtopu"
+   ]
+  }
+ },
+ {
+  "id": "recwWzOthwJAuL9TG",
+  "createdTime": "2026-09-29T21:09:06.000Z",
+  "fields": {
+   "Unit": "kg",
+   "Supplier": "Sunny Acres Dairy",
+   "Name": "Cheddar cheese",
+   "In Stock": true,
+   "Cost per unit": 9.8,
+   "Meals": [
+    "recivxOAdWnPIzGGf",
+    "rec73Vc4G1fYMkqn2"
+   ],
+   "Allergens": [
+    "Dairy"
+   ]
+  }
+ }
+]
