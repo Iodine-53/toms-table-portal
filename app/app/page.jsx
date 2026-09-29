@@ -3,7 +3,8 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import MealArt from "../components/MealArt";
-import data from "../lib/portal-data.json";
+import LiveBadge from "../components/LiveBadge";
+import { usePortalData } from "../components/use-portal-data";
 
 const money = (n) => `$${n.toFixed(2)}`;
 const LARGE_MULT = 1.4;
@@ -35,6 +36,7 @@ function Logo() {
 }
 
 export default function Portal() {
+  const { data, live, syncing } = usePortalData();
   const { menu, activeCustomers, allTags } = data;
   const [filter, setFilter] = useState("All");
   const [customerName, setCustomerName] = useState(activeCustomers[0]?.name ?? "");
@@ -95,6 +97,7 @@ export default function Portal() {
             </span>
           </Link>
           <span className="week-pill">Week of {fmtDate(menu.weekCommencing)}</span>
+          <LiveBadge live={live} syncing={syncing} />
           <div className="header-spacer" />
           <div className="customer-switch">
             <label htmlFor="cust">Ordering as</label>
