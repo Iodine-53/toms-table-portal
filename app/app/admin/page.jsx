@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import data from "../../lib/portal-data.json";
+import LiveBadge from "../../components/LiveBadge";
+import { usePortalData } from "../../components/use-portal-data";
 
 const money = (n) => `$${n.toFixed(2)}`;
 
@@ -29,6 +30,7 @@ function fmtDate(iso) {
 }
 
 export default function Admin() {
+  const { data, live, syncing } = usePortalData();
   const { stats, statusCounts, orders, fulfillment, menu } = data;
   const [expanded, setExpanded] = useState(null);
 
@@ -60,6 +62,7 @@ export default function Admin() {
             </span>
           </Link>
           <span className="week-pill">Kitchen admin</span>
+          <LiveBadge live={live} syncing={syncing} />
           <div className="header-spacer" />
           <Link href="/" className="admin-link">
             ← Customer portal
