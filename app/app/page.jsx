@@ -42,11 +42,23 @@ export default function Portal() {
   const [customerName, setCustomerName] = useState(activeCustomers[0]?.name ?? "");
   const [modalMeal, setModalMeal] = useState(null);
   const [boxOpen, setBoxOpen] = useState(false);
-  const [box, setBox] = useState([]); // [{name, qty, portion}]
+  const [box, setBox] = useState([]); // [{id, name, qty, portion}]
   const [placed, setPlaced] = useState(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [orderError, setOrderError] = useState(null);
+  const [deliveryDate, setDeliveryDate] = useState(() => {
+    // Default: the Saturday of the menu week.
+    const d = new Date(menu.weekCommencing + "T12:00:00");
+    if (!Number.isNaN(d.getTime())) d.setDate(d.getDate() + 5);
+    return d.toISOString().slice(0, 10);
+  });
 
   const customer = activeCustomers.find((c) => c.name === customerName);
-  const priceOf = (name) => menu.meals.find((m) => m.name === name)?.price ?? 0;
+  const mealById = useMemo(
+    () => Object.fromEntries(menu.meals.map((m) => [m.id, m])),
+    [menu.meals]
+  );
+  const priceOf = (id) => mealById[id]?.price ?? 0;
 
   const meals = useMemo(
     () =>
@@ -56,14 +68,14 @@ export default function Portal() {
     [filter, menu.meals]
   );
 
-  const addToBox = (name) => {
+  const addToBox = (meal) => {
     setBox((prev) => {
-      const line = prev.find((l) => l.name === name && l.portion === "Regular");
+      const line = prev.find((l) => l.id === meal.id && l.portion === "Regular");
       if (line)
         return prev.map((l) =>
           l === line ? { ...l, qty: l.qty + 1 } : l
         );
-      return [...prev, { name, qty: 1, portion: "Regular" }];
+      return [...prev, { id: meal.id, name: meal.name, qty: 1, portion: "Regular" }];
     });
   };
   const setQty = (idx, qty) =>
@@ -72,20 +84,52 @@ export default function Portal() {
     );
   const setPortion = (idx, portion) =>
     setBox((prev) => prev.map((l, i) => (i === idx ? { ...l, portion } : l)));
-  const lineTotal = (l) => l.qty * priceOf(l.name) * (l.portion === "Large" ? LARGE_MULT : 1);
+  const lineTotal = (l) => l.qty * priceOf(l.id) * (l.portion === "Large" ? LARGE_MULT : 1);
   const subtotal = box.reduce((s, l) => s + lineTotal(l), 0);
   const boxCount = box.reduce((s, l) => s + l.qty, 0);
+  const todayISO = new Date().toISOString().slice(0, 10);
 
-  const placeOrder = () => {
-    const ref = "TT-DEMO-" + Math.floor(1000 + Math.random() * 9000);
-    setPlaced({ ref, count: boxCount, total: subtotal, customer: customerName });
-    setBox([]);
+  const placeOrder = async () => {
+    if (submitting || !customer) return;
+    setSubmitting(true);
+    setOrderError(null);
+    try {
+      const res = await fetch("/api/orders", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          customerId: customer.id,
+          weekId: menu.id,
+          deliveryDate,
+          items: box.map((l) => ({
+            mealId: l.id,
+            quantity: l.qty,
+            portion: l.portion,
+          })),
+        }),
+      });
+      const json = await res.json().catch(() => ({}));
+      if (!res.ok) throw new Error(json.error || "Your order could not be saved.");
+      setPlaced({
+        ref: json.ref,
+        count: boxCount,
+        total: json.total,
+        customer: customerName,
+        deliveryDate,
+      });
+      setBox([]);
+    } catch (e) {
+      setOrderError(e.message);
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
     <>
       <div className="demo-banner">
-        <strong>Demo mode</strong> — portfolio preview with fictional data. No real orders are placed.
+        <strong>Live ordering</strong> — portfolio demo with fictional data. Orders
+        you place are submitted to the demo kitchen for real.
       </div>
 
       <header className="site-header">
@@ -190,7 +234,7 @@ export default function Portal() {
                       <button className="btn btn-outline btn-small" onClick={() => setModalMeal(m)}>
                         Details
                       </button>
-                      <button className="btn btn-add btn-small" onClick={() => addToBox(m.name)}>
+                      <button className="btn btn-add btn-small" onClick={() => addToBox(m)}>
                         Add to box
                       </button>
                     </div>
@@ -256,7 +300,7 @@ export default function Portal() {
                 className="btn btn-primary"
                 style={{ width: "100%", justifyContent: "center", marginTop: 8 }}
                 onClick={() => {
-                  addToBox(modalMeal.name);
+                  addToBox(modalMeal);
                   setModalMeal(null);
                   setBoxOpen(true);
                 }}
@@ -290,14 +334,14 @@ export default function Portal() {
                   <span className="big-check">✓</span>
                   <h3>Order received</h3>
                   <p style={{ color: "var(--ink-soft)", marginTop: 8 }}>
-                    Reference <strong>{placed.ref}</strong> — {placed.count} meal
+                    Reference <strong>#{placed.ref}</strong> — {placed.count} meal
                     {placed.count === 1 ? "" : "s"} for {placed.customer},{" "}
-                    {money(placed.total)}.
+                    {money(placed.total)}, delivering {fmtDate(placed.deliveryDate)}.
                   </p>
                   <div className="demo-note" style={{ textAlign: "left", marginTop: 16 }}>
-                    <strong>Demo mode:</strong> no real order was placed and no
-                    payment was taken. In production this would create the order
-                    in Airtable and fire the kitchen prep automation.
+                    <strong>Live order:</strong> this order was created in the
+                    demo base — no payment was taken. In production it would also
+                    fire the kitchen prep automation.
                   </div>
                   <button
                     className="btn btn-ghost"
@@ -337,8 +381,8 @@ export default function Portal() {
                         onChange={(e) => setPortion(i, e.target.value)}
                         aria-label="Portion size"
                       >
-                        <option>Regular</option>
-                        <option>Large (+40%)</option>
+                        <option value="Regular">Regular</option>
+                        <option value="Large">Large (+40%)</option>
                       </select>
                       <button className="remove-link" onClick={() => setQty(i, 0)}>
                         Remove
@@ -361,16 +405,41 @@ export default function Portal() {
                     ? ` · allergies: ${customer.allergies}`
                     : ""}
                 </div>
+                <label
+                  htmlFor="delivery-date"
+                  style={{ display: "block", fontSize: 13, fontWeight: 600, marginBottom: 6 }}
+                >
+                  Delivery date
+                </label>
+                <input
+                  id="delivery-date"
+                  type="date"
+                  className="date-input"
+                  value={deliveryDate}
+                  min={todayISO}
+                  onChange={(e) => setDeliveryDate(e.target.value)}
+                  style={{ width: "100%", marginBottom: 12 }}
+                />
                 <button
                   className="btn btn-primary"
                   style={{ width: "100%", justifyContent: "center" }}
                   onClick={placeOrder}
+                  disabled={submitting}
                 >
-                  Place demo order
+                  {submitting ? "Placing your order…" : "Place order"}
                 </button>
+                {orderError && (
+                  <div
+                    className="order-error"
+                    role="alert"
+                    style={{ marginTop: 10, color: "#a33327", fontSize: 14 }}
+                  >
+                    {orderError}
+                  </div>
+                )}
                 <div className="demo-note">
-                  <strong>Demo mode</strong> — no real order is placed and no
-                  payment is taken.
+                  <strong>Live ordering</strong> — your order is created in the
+                  demo base. No payment is taken.
                 </div>
               </div>
             )}
