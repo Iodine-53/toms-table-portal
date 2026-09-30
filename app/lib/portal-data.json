@@ -1,12 +1,14 @@
 {
- "generatedAt": "2026-09-29T21:58:19.662Z",
+ "generatedAt": "2026-09-30T06:13:09.899Z",
  "demo": true,
  "menu": {
+  "id": "recGwFSR1OYPkjC2O",
   "weekCommencing": "2026-09-28",
   "orderCutoff": "2026-10-01T18:00:00.000Z",
   "notes": "Fall harvest week — sweet potato and kale featured across the menu.",
   "meals": [
    {
+    "id": "recqrBSlDDNjq5sz5",
     "name": "Baked Salmon & Greens Plate",
     "description": "Oven-baked salmon with garlicky broccoli, kale and roasted sweet potato wedges.",
     "price": 18.99,
@@ -27,6 +29,7 @@
     ]
    },
    {
+    "id": "recom2jMNtG1KBEzn",
     "name": "Black Bean Fiesta Wrap",
     "description": "Smoky black beans, avocado and kale wrapped in a soft flour tortilla with lime crema.",
     "price": 11.99,
@@ -45,6 +48,7 @@
     ]
    },
    {
+    "id": "rec73Vc4G1fYMkqn2",
     "name": "Cheesy Chicken Quesadilla",
     "description": "Grilled chicken and melted cheddar with black beans in a crisp flour tortilla.",
     "price": 13.49,
@@ -62,6 +66,7 @@
     ]
    },
    {
+    "id": "rechX54EJh9vtWcvi",
     "name": "Coconut Curry Chicken & Rice",
     "description": "Tender chicken simmered in coconut curry over jasmine rice with steamed broccoli.",
     "price": 15.99,
@@ -81,6 +86,7 @@
     ]
    },
    {
+    "id": "recYY4oxqjol8vINE",
     "name": "Grilled Chicken Power Bowl",
     "description": "Herb-grilled chicken breast over jasmine rice with steamed broccoli and fresh avocado.",
     "price": 14.99,
@@ -101,6 +107,7 @@
     ]
    },
    {
+    "id": "recyOxkonRllMCrU1",
     "name": "Quinoa Kale Super Salad",
     "description": "Protein-packed quinoa with massaged kale, avocado and black beans in citrus vinaigrette.",
     "price": 12.99,
@@ -121,6 +128,7 @@
     ]
    },
    {
+    "id": "recAE8gOcILhiAVgo",
     "name": "Salmon Teriyaki & Quinoa",
     "description": "Glazed salmon fillet with fluffy quinoa, charred broccoli and wilted kale.",
     "price": 17.99,
@@ -140,6 +148,7 @@
     ]
    },
    {
+    "id": "recBVA0T1GUvmtopu",
     "name": "Southwest Turkey Bowl",
     "description": "Seasoned ground turkey over jasmine rice with black beans, avocado and lime.",
     "price": 14.49,
@@ -160,6 +169,7 @@
     ]
    },
    {
+    "id": "recOZLXxj4A3t9Rt9",
     "name": "Turkey Sweet Potato Skillet",
     "description": "Lean ground turkey with roasted sweet potato, kale and broccoli in a savory herb sauce.",
     "price": 15.49,
@@ -180,6 +190,7 @@
     ]
    },
    {
+    "id": "recivxOAdWnPIzGGf",
     "name": "Veggie Scramble Breakfast Box",
     "description": "Fluffy scrambled eggs with cheddar, kale and roasted sweet potato home fries.",
     "price": 11.99,
@@ -200,6 +211,7 @@
  },
  "customers": [
   {
+   "id": "recnoLeUxqAXcYecm",
    "name": "Aisha Bello",
    "email": "aisha.b@example.com",
    "status": "Active",
@@ -210,6 +222,7 @@
    "dietNotes": "Halal certification required on all meat."
   },
   {
+   "id": "rec5t8JLqMH3KIM62",
    "name": "Daniel Kim",
    "email": "dkim.meals@example.com",
    "status": "Active",
@@ -220,6 +233,7 @@
    "dietNotes": null
   },
   {
+   "id": "recghHcMQIOe6pRYb",
    "name": "David Okafor",
    "email": "dokafor@example.com",
    "status": "Active",
@@ -230,6 +244,7 @@
    "dietNotes": null
   },
   {
+   "id": "reclDaudh2yk2uTYZ",
    "name": "Emily Nguyen",
    "email": "emily.n@example.com",
    "status": "Active",
@@ -240,6 +255,7 @@
    "dietNotes": "Reads every label."
   },
   {
+   "id": "rec7ttomRTnkVSEoS",
    "name": "James Carter",
    "email": "jcarter88@example.com",
    "status": "Active",
@@ -250,6 +266,7 @@
    "dietNotes": "Marathon training — high protein please."
   },
   {
+   "id": "recFZln8vrkLk3332",
    "name": "Laura Bennett",
    "email": "laura.bennett@example.com",
    "status": "Paused",
@@ -260,6 +277,7 @@
    "dietNotes": "Paused subscription while traveling."
   },
   {
+   "id": "recSsJiECRCbNCOx2",
    "name": "Marcus Johnson",
    "email": "mjohnson.fit@example.com",
    "status": "Active",
@@ -270,6 +288,7 @@
    "dietNotes": "Double protein on bowls when possible."
   },
   {
+   "id": "recTyNsfhMeoz04Rz",
    "name": "Maya Thompson",
    "email": "maya.thompson@example.com",
    "status": "Active",
@@ -280,6 +299,7 @@
    "dietNotes": "Prefers extra veggies over rice."
   },
   {
+   "id": "recgfnVyWVYP1KwHB",
    "name": "Robert Hayes",
    "email": "rhayes45@example.com",
    "status": "Active",
@@ -290,6 +310,7 @@
    "dietNotes": null
   },
   {
+   "id": "recM9Snn3Z1L9o8Qf",
    "name": "Sofia Reyes",
    "email": "sofia.reyes@example.com",
    "status": "Active",
@@ -302,6 +323,7 @@
  ],
  "activeCustomers": [
   {
+   "id": "recnoLeUxqAXcYecm",
    "name": "Aisha Bello",
    "email": "aisha.b@example.com",
    "status": "Active",
@@ -312,6 +334,7 @@
    "dietNotes": "Halal certification required on all meat."
   },
   {
+   "id": "rec5t8JLqMH3KIM62",
    "name": "Daniel Kim",
    "email": "dkim.meals@example.com",
    "status": "Active",
@@ -322,6 +345,7 @@
    "dietNotes": null
   },
   {
+   "id": "recghHcMQIOe6pRYb",
    "name": "David Okafor",
    "email": "dokafor@example.com",
    "status": "Active",
@@ -332,6 +356,7 @@
    "dietNotes": null
   },
   {
+   "id": "reclDaudh2yk2uTYZ",
    "name": "Emily Nguyen",
    "email": "emily.n@example.com",
    "status": "Active",
@@ -342,6 +367,7 @@
    "dietNotes": "Reads every label."
   },
   {
+   "id": "rec7ttomRTnkVSEoS",
    "name": "James Carter",
    "email": "jcarter88@example.com",
    "status": "Active",
@@ -352,6 +378,7 @@
    "dietNotes": "Marathon training — high protein please."
   },
   {
+   "id": "recSsJiECRCbNCOx2",
    "name": "Marcus Johnson",
    "email": "mjohnson.fit@example.com",
    "status": "Active",
@@ -362,6 +389,7 @@
    "dietNotes": "Double protein on bowls when possible."
   },
   {
+   "id": "recTyNsfhMeoz04Rz",
    "name": "Maya Thompson",
    "email": "maya.thompson@example.com",
    "status": "Active",
@@ -372,6 +400,7 @@
    "dietNotes": "Prefers extra veggies over rice."
   },
   {
+   "id": "recgfnVyWVYP1KwHB",
    "name": "Robert Hayes",
    "email": "rhayes45@example.com",
    "status": "Active",
@@ -382,6 +411,7 @@
    "dietNotes": null
   },
   {
+   "id": "recM9Snn3Z1L9o8Qf",
    "name": "Sofia Reyes",
    "email": "sofia.reyes@example.com",
    "status": "Active",
