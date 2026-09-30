@@ -6,21 +6,24 @@ export function denormalize({ meals, ingredients, customers, menus, orders, item
   const mF = byId(meals), iF = byId(ingredients), cF = byId(customers);
   const oF = byId(orders), itF = byId(items), sF = byId(subs), pF = byId(profiles);
 
-  const menu = menus.map((r) => r.fields).find((f) => f.Status === "Published");
+  const menuRec = menus.find((r) => r.fields.Status === "Published");
+  const menu = menuRec?.fields;
 
   // --- meals on this week's menu ---
+  const mById = Object.fromEntries(meals.map((r) => [r.id, r]));
   const menuMeals = (menu?.Meals ?? [])
-    .map((id) => mF[id])
+    .map((id) => mById[id])
     .filter(Boolean)
-    .filter((f) => f.Active)
-    .map((f) => ({
-      name: f.Name,
-      description: f.Description ?? "",
-      price: f["Base price"] ?? 0,
-      category: f.Category ?? "",
-      tags: f["Dietary tags"] ?? [],
-      prepTime: f["Prep Time (mins)"] ?? null,
-      ingredients: (f.Ingredients ?? []).map((id) => iF[id]?.Name).filter(Boolean),
+    .filter((r) => r.fields.Active)
+    .map((r) => ({
+      id: r.id,
+      name: r.fields.Name,
+      description: r.fields.Description ?? "",
+      price: r.fields["Base price"] ?? 0,
+      category: r.fields.Category ?? "",
+      tags: r.fields["Dietary tags"] ?? [],
+      prepTime: r.fields["Prep Time (mins)"] ?? null,
+      ingredients: (r.fields.Ingredients ?? []).map((id) => iF[id]?.Name).filter(Boolean),
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -41,6 +44,7 @@ export function denormalize({ meals, ingredients, customers, menus, orders, item
       const sub = subByCustomer[id];
       const prof = profileByCustomer[id];
       return {
+        id,
         name: f.Name,
         email: f.Email ?? "",
         status: f.Status ?? "",
@@ -129,6 +133,7 @@ export function denormalize({ meals, ingredients, customers, menus, orders, item
     generatedAt: new Date().toISOString(),
     demo: true,
     menu: {
+      id: menuRec?.id ?? null,
       weekCommencing: menu?.["Week commencing"] ?? "",
       orderCutoff: menu?.["Order cutoff"] ?? "",
       notes: menu?.["Menu Notes"] ?? "",
