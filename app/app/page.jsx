@@ -9,6 +9,14 @@ import { usePortalData } from "../components/use-portal-data";
 const money = (n) => `$${n.toFixed(2)}`;
 const LARGE_MULT = 1.4;
 
+// Real food photo when the base has one, otherwise the SVG plate art.
+function MealImage({ meal, className }) {
+  if (meal.photo) {
+    return <img src={meal.photo} alt={meal.name} className={className} loading="lazy" />;
+  }
+  return <MealArt name={meal.name} className={className} />;
+}
+
 function fmtDate(iso) {
   if (!iso) return "";
   const d = new Date(iso.length === 10 ? iso + "T12:00:00" : iso);
@@ -214,7 +222,7 @@ export default function Portal() {
             <div className="meal-grid">
               {meals.map((m) => (
                 <article key={m.name} className="meal-card">
-                  <MealArt name={m.name} className="meal-art" />
+                  <MealImage meal={m} className="meal-art" />
                   <div className="meal-body">
                     <div className="meal-top">
                       <h3 className="meal-name">{m.name}</h3>
@@ -264,7 +272,7 @@ export default function Portal() {
             <button className="modal-close" onClick={() => setModalMeal(null)} aria-label="Close">
               ×
             </button>
-            <MealArt name={modalMeal.name} className="meal-art" />
+            <MealImage meal={modalMeal} className="meal-art" />
             <div className="modal-body">
               <h3>{modalMeal.name}</h3>
               <div className="modal-price">{money(modalMeal.price)}</div>
