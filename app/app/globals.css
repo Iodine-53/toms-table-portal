@@ -151,6 +151,7 @@ button { font-family: inherit; cursor: pointer; }
 }
 .meal-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
 .meal-art { display: block; width: 100%; aspect-ratio: 16 / 10; }
+img.meal-art { object-fit: cover; }
 .meal-body { padding: 18px 18px 16px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .meal-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; }
 .meal-name { font-size: 19px; color: var(--green-deep); }
