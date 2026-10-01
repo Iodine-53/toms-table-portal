@@ -23,6 +23,7 @@ export function denormalize({ meals, ingredients, customers, menus, orders, item
       category: r.fields.Category ?? "",
       tags: r.fields["Dietary tags"] ?? [],
       prepTime: r.fields["Prep Time (mins)"] ?? null,
+      photo: r.fields.Photo?.[0]?.url ?? null,
       ingredients: (r.fields.Ingredients ?? []).map((id) => iF[id]?.Name).filter(Boolean),
     }))
     .sort((a, b) => a.name.localeCompare(b.name));
